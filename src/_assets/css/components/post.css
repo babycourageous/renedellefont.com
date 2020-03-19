@@ -1,0 +1,81 @@
+.post-content {
+  > * + * {
+    @apply mt-5;
+  }
+
+  h2,
+  h3,
+  h4 {
+    @apply relative leading-tight;
+    .header-anchor {
+      @apply absolute block left-0 top-0 -ml-6 mt-2 font-normal text-green-700;
+
+      svg {
+        @apply invisible;
+      }
+    }
+  }
+  h2:hover,
+  h3:hover,
+  h4:hover {
+    .header-anchor svg {
+      @apply visible;
+    }
+  }
+
+  .header-anchor svg {
+    @apply w-4 h-4 fill-current;
+  }
+
+  h2 {
+    @apply mt-8 text-2xl;
+    & + p {
+      @apply mt-2;
+    }
+  }
+
+  h3 {
+    @apply font-bold text-lg uppercase;
+    & + p {
+      @apply mt-1;
+    }
+  }
+
+  h4 {
+    @apply font-bold;
+    & + p {
+      @apply mt-1;
+    }
+  }
+
+  p {
+    @apply text-lg text-gray-800;
+  }
+
+  a {
+    @apply text-green-600 underline;
+  }
+
+  ul,
+  ol {
+    @apply ml-4;
+    li p:nth-child(n + 3) {
+      @apply mt-2;
+    }
+    > * + * {
+      @apply mt-2;
+    }
+  }
+
+  ul li:before {
+    @apply pr-1 text-xs text-gray-800;
+    content: '➜';
+    top: 2px;
+    font-style: normal;
+  }
+
+  ol {
+    @apply list-decimal;
+  }
+}
+a: not([class]);

@@ -5,7 +5,11 @@ pre:not([class*='language-']) {
   }
 }
 code {
-  @apply px-1 text-teal-300;
+  @apply inline-block px-1 bg-gray-100 text-sm text-orange-600 border border-gray-400;
+}
+
+pre code {
+  border: 0;
 }
 
 code[class*='language-'],
@@ -67,7 +71,7 @@ pre[class*='language-'] {
 .token.doctype,
 .token.cdata {
   @apply text-gray-700;
-  //color: #5c6370;
+  /*color: #5c6370;*/
 }
 
 .token.punctuation {
@@ -162,4 +166,25 @@ pre.line-numbers > code {
 .line-numbers-rows > span:before {
   @apply block pr-3 text-gray-700 text-right;
   content: counter(linenumber);
+}
+
+/* Highlight Rows */
+.highlight-line-isdir {
+  color: #b0b0b0;
+  background-color: #222;
+}
+
+.highlight-line-active {
+  @apply bg-gray-800 text-gray-400;
+  .token.comment {
+    @apply text-gray-600;
+  }
+}
+
+.highlight-line-add {
+  background-color: #45844b;
+}
+
+.highlight-line-remove {
+  background-color: #902f2f;
 }

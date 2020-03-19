@@ -1,0 +1,6 @@
+.categories {
+  & li:not(:last-child) a::after {
+    display: inline-block;
+    content: ', ';
+  }
+}
