@@ -1,15 +1,17 @@
 ---
-layout: base.njk
+layout: base
 ---
-
-<article class="post">
-  <h1>{{title}}</h1>
-  <header>
-    <p>
-    Posted on <time datetime="{{ date }}">{{ date | dateDisplay }}</time>
-    </p>
-  </header>
-  <div class="content o-4">
-    {{ content | safe }}
+<article>
+  <h1 class="mb-2 font-sans text-3xl leading-none uppercase">{{title}}</h1>
+  {% if featuredimage %}
+    <figure class="h-64">
+      <img class="w-full h-full object-cover" src="{{featuredimage}}">
+    </figure>
+  {% endif %}
+  {% if toc %}
+    <aside class="mt-10 text-lg">{{content | toc | safe}}</aside>
+  {% endif %}
+  <div class="post-content mt-10">
+    {{content | safe}}
   </div>
 </article>
