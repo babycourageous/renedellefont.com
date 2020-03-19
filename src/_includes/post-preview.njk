@@ -1,0 +1,27 @@
+<article class="post relative pt-10 px-10 pb-2 border border-none bg-white shadow-md" role="article" itemscope="" itemtype="http://schema.org/BlogPosting">
+
+  <header class="flex flex-col-reverse">
+    <h2 class="mb-5 font-sans font-bold text-3xl leading-none" itemprop="name headline">
+      <a class="text-gray-800" href="{{post.url}}">{{post.data.title}}</a>
+    </h2>
+
+    <div class="flex justify-between mb-2 font-sans text-gray-500 tracking-wider">
+      <time class="relative text-sm uppercase" datetime="{{post.date}}" itemprop="datePublished">{{post.date | dateDisplay}}</time>
+      <a class="block py-1 px-2 bg-orange-700 font-bold text-xxs text-orange-100 uppercase tracking-widest rounded-full" href="/categories/{{post.data.category}}">{{post.data.category}}</a>
+    </div>
+  </header>
+
+  <div class="font-serif text-gray-600">
+    {% if post.data.featuredimage %}
+      <figure class="h-64">
+        <img class="w-full h-full object-cover" src="{{post.data.featuredimage}}">
+      </figure>
+    {% endif %}
+
+    <p class="mt-8 pt-6 border-t border-gray-300">{{post.data.excerpt}}</p>
+  </div>
+
+  <footer class="mt-4 text-right">
+    <a class="text-xs text-green-600" href="{{post.url}}" aria-labelledby="{{post.data.title}}">Read full post>></a>
+  </footer>
+</article>

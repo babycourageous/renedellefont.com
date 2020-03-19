@@ -1,11 +1,13 @@
-<header class="container flex justify-between items-center mx-auto border-b border-gray-700 bg-gray-800">
-  <nav class="-mb-px font-light text-white">
-    <ul class="flex oh-6">
-      {%- for nav in site.nav -%}
-        <li>
-          <a class="block pt-10 pb-6 hover:text-teal-200 border-b border-transparent hover:border-teal-200 uppercase{% if nav.url == page.url %} text-teal-200{% endif %}" href="{{ nav.url | url }}">{{ nav.item }}</a>
-        </li>
-      {%- endfor -%}
-    </ul>
-  </nav>
+<header class="flex flex-none items-center p-5 border-t-8 border-green-500">
+  <img class="w-12 h-12 rounded-full" style="filter: grayscale(100%);" src="https://scontent-atl3-1.cdninstagram.com/vp/768c25b77374f71639a51485fc74a685/5E040666/t51.2885-19/11123772_1084778481538176_52257420_a.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com" alt="">
+  <h1 class="ml-4">
+    <a href="{{ '/' | url }}">{{ site.title }}</a>
+  </h1>
+  <ul class="flex ml-auto">
+    {%- for nav in site.nav -%}
+      <li class="ml-4 {% if nav.url == page.url %}is-active{% endif %}">
+        <a href="{{ nav.url | url }}">{{ nav.item }}</a>
+      </li>
+    {%- endfor -%}
+  </ul>
 </header>
