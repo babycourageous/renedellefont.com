@@ -19,12 +19,22 @@ function owl({ addUtilities, config, e }) {
   addUtilities(newUtilities, ['responsive'])
 }
 
+/* eslint-disable global-require */
 module.exports = {
   theme: {
     fontFamily: {
-      sans: 'Montserrat, sans-serif',
+      sans: 'Source Sans Pro, sans-serif',
+      serif: 'PT Serif, serif',
+      mono: 'Fira Mono, monospace',
     },
-    extend: {},
+    extend: {
+      fontSize: {
+        xxs: '.6875rem',
+      },
+      flex: {
+        holy: '1 0 auto',
+      },
+    },
   },
   variants: {},
   plugins: [twForms, owl],
