@@ -1,7 +1,7 @@
 {
-  "title": "11ty Netlify Starter",
-  "url": "https://11ty-netlify-starter.netlify.com",
-  "description": "Starter kit repository for a web site using the Eleventy static site generator that uses Netlify for deployment and serverless functionality along with NetlifyCMS baked in.",
+  "title": "ReneDellefont.com",
+  "url": "https://renedellefont.com",
+  "description": "Portfolio of work and random musings about front end web development",
   "nav": [
     {
       "item": "Home",
