@@ -1,0 +1,11 @@
+<header class="container flex justify-between items-center mx-auto border-b border-gray-700 bg-gray-800">
+  <nav class="-mb-px font-light text-white">
+    <ul class="flex oh-6">
+      {%- for nav in site.nav -%}
+        <li>
+          <a class="block pt-10 pb-6 hover:text-teal-200 border-b border-transparent hover:border-teal-200 uppercase{% if nav.url == page.url %} text-teal-200{% endif %}" href="{{ nav.url | url }}">{{ nav.item }}</a>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </nav>
+</header>

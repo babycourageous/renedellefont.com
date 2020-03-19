@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if title %}
+      <title>{{ title }} | {{site.title}}</title>
+    {% else %}
+      <title>{{site.title}}</title>
+    {% endif %}
+    <meta name="Description" content="{{ renderData.description or description or site.description }}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ '/css/styles.css' | url }}">
+  </head>
+  <body class="flex flex-col min-h-screen font-sans bg-gray-800">
+    <!-- include svg sprite -->
+    <span style="display:none;">{% include "svg/sprite.symbol.svg" %}</span>
+    {%- include "header.njk" -%}
+    <main class="container flex flex-col flex-1 mx-auto py-8">
+
+      {{ content | safe }}
+    </main>
+    {%- include "footer.njk" -%}
+    <script src="/javascript/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+### OSX ###
+.DS_Store
+
+### Node ###
+# Logs
+logs
+*.log
+npm-debug.log*
+node_modules
+
+# eleventy
+_site
+
+# Local Netlify folder
+.netlify

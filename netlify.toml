@@ -1,0 +1,14 @@
+[build]
+  command = "yarn build"
+  publish = "_site"
+  functions = "src/_functions"
+
+[dev]
+  command = "yarn dev"
+  port = 3000
+
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200

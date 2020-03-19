@@ -1,0 +1,69 @@
+---
+layout: base
+---
+<h1 class="font-bold text-4xl text-white">11ty Netlify Starter</h1>
+<p class="font-light text-white text-xl">
+  <em>This is an <a href="https://www.11ty.io/">Eleventy starter project</a> to get a site using 11ty and <a href="https://www.netlify.com/">Netlify</a> up and running.</em>
+</p>
+<section class="text-white">
+  <h2 class="mt-8 text-2xl uppercase tracking-wider">Project Info</h2>
+  <p class="mt-5">This is a starting point and will scaffold out a project with the following:</p>
+  <ul class="ml-3 o-2">
+    <li class="flex items-center">
+      <svg class="flex-no-shrink block fill-current text-purple w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.393 7.5l-5.643 5.784-2.644-2.506-1.856 1.858 4.5 4.364 7.5-7.643-1.857-1.857z"></path>
+      </svg>
+      <span>
+        <a href="https://www.11ty.io/">Eleventy</a> static site generator</span></li>
+    <li class="flex items-center">
+      <svg class="flex-no-shrink block fill-current text-purple w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.393 7.5l-5.643 5.784-2.644-2.506-1.856 1.858 4.5 4.364 7.5-7.643-1.857-1.857z"></path>
+      </svg>
+      <span>PostCSS processing</span></li>
+    <ul class="ml-8 list-disc list-inside">
+      <li>PostCSS imports</li>
+      <li>Pre CSS</li>
+      <li>
+        <a href="https://tailwindcss.com/">Tailwind CSS</a>
+      </li>
+      <li>Autoprefixer</li>
+      <li>CSS Nano</li>
+      <li>Purge CSS</li>
+    </ul>
+    <li class="flex items-center">
+      <svg class="flex-no-shrink block fill-current text-purple w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.393 7.5l-5.643 5.784-2.644-2.506-1.856 1.858 4.5 4.364 7.5-7.643-1.857-1.857z"></path>
+      </svg>
+      <span>Tailwind CSS plugins</span></li>
+    <ul class="ml-8 list-disc list-inside">
+      <li>
+        <a href="https://tailwindcss-custom-forms.netlify.com/">Tailwind Custom Forms</a>
+      </li>
+      <li>Custom Tailwind Lobotomized Owl selector</li>
+    </ul>
+    <li class="flex items-center">
+      <svg class="flex-no-shrink block fill-current text-purple w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.393 7.5l-5.643 5.784-2.644-2.506-1.856 1.858 4.5 4.364 7.5-7.643-1.857-1.857z"></path>
+      </svg>
+      <span>JS bundling with <a href="https://rollupjs.org/">Rollup</a></span></li>
+    <li class="flex items-center">
+      <svg class="flex-no-shrink block fill-current text-purple w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.393 7.5l-5.643 5.784-2.644-2.506-1.856 1.858 4.5 4.364 7.5-7.643-1.857-1.857z"></path>
+      </svg>
+      <span>Netlify Dev</span></li>
+    <ul class="ml-8 list-disc list-inside">
+      <li>Testing redirects</li>
+      <li>Netlify Functions</li>
+    </ul>
+</ul>
+</section>
+<section class="mt-8 text-white">
+<h2 class="text-2xl uppercase tracking-wider">Default Posts</h2>
+<ul>
+  {%- for post in collections.posts -%}
+    <li>
+      <a href="{{post.url}}">{{post.data.title}}</a>
+    </li>
+  {%- endfor -%}
+</ul>
+</section>
