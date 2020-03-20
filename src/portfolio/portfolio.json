@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "client": "Education Planners",
+      "blurb": "Marketing website for Atlanta-based educational consulting firm.",
+      "thumbnail": "edplanners",
+      "link": "https://edplanners.org",
+      "linktext": "Visit Site"
+    },
+    {
+      "client": "the1043",
+      "blurb": "Proof of concept design for historic event space located in Adair Park, Atlanta.",
+      "thumbnail": "1043",
+      "link": "/portfolio/the1043",
+      "linktext": "View gallery"
+    },
+    {
+      "client": "Vinings Gallery",
+      "blurb": "Proof of concept design for an upscale art gallery located in Roswell, GA.",
+      "thumbnail": "vinings",
+      "link": "/portfolio/vinings",
+      "linktext": "View gallery"
+    }
+  ]
+}
