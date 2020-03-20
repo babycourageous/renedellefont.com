@@ -1,5 +1,5 @@
 .toc ol {
-  @apply ml-8 text-green-700 list-decimal;
+  @apply ml-8 text-green-500 list-decimal;
   li {
     @apply py-1;
   }

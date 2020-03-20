@@ -49,11 +49,11 @@
   }
 
   p {
-    @apply text-lg text-gray-800;
+    @apply text-lg text-gray-100;
   }
 
   a {
-    @apply text-green-600 underline;
+    @apply text-green-500 underline;
   }
 
   ul,
