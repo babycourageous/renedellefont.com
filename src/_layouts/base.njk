@@ -12,12 +12,13 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Serif|Source+Sans+Pro:400,700|Fira+Mono" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ '/css/styles.css' | url }}">
   </head>
-  <body class="flex flex-col h-screen font-serif bg-gray-100">
-    {%- include "header.njk" -%}
-    <main class="flex-holy w-5/6 max-w-2xl mx-auto pb-16{% if templateClass %} {{ templateClass }}{% endif %}">
-      {{ content | safe }}
-    </main>
-    {%- include "footer.njk" -%}
+  <body class="flex flex-col h-screen font-serif bg-gray-900">
+    <div class="p-6 sm:p-0 bg-gray-900 font-sans text-white">
+      {%- include "header.njk" -%}
+      <main class="flex-holy w-5/6 max-w-2xl mx-auto pb-16{% if templateClass %} {{ templateClass }}{% endif %}">
+        {{ content | safe }}
+      </main>
+    </div>
     <script src="/javascript/index.js"></script>
   </body>
 </html>

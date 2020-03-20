@@ -1,0 +1,8 @@
+---
+layout: base
+---
+{%- include "header.njk" -%}
+<main class="{% if templateClass %} {{ templateClass }}{% endif %}">
+  {{ content | safe }}
+</main>
+{%- include "footer.njk" -%}
