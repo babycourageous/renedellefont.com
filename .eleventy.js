@@ -53,6 +53,11 @@ module.exports = function(eleventyConfig) {
   });
 
   /*
+   * SHORTCODES *
+  */
+  eleventyConfig.addShortcode('figure', sc.figure)
+
+  /*
    * COLLECTIONS
   */
   // Posts collection using glob
