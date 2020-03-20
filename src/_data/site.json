@@ -8,8 +8,12 @@
       "url": "/"
     },
     {
-      "item": "About",
-      "url": "/about"
+      "item": "Portfolio",
+      "url": "/portfolio"
+    },
+    {
+      "item": "Writing",
+      "url": "/writing"
     }
   ]
 }
