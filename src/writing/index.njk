@@ -1,0 +1,10 @@
+---
+layout: base
+---
+
+{% set postlist = collections.posts | reverse %}
+<ul class="o-10">
+  {%- for post in postlist -%}
+    <li>{%- include "post-preview.njk" -%}</li>
+  {%- endfor -%}
+</ul>
