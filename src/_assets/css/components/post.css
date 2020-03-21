@@ -1,3 +1,4 @@
+/* purgecss start ignore */
 .post-content {
   > * + * {
     @apply mt-5;
@@ -79,3 +80,4 @@
   }
 }
 a: not([class]);
+/* purgecss end ignore */
