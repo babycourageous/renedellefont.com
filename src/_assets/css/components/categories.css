@@ -1,6 +1,8 @@
+/* purgecss start ignore */
 .categories {
   & li:not(:last-child) a::after {
     display: inline-block;
     content: ', ';
   }
 }
+/* purgecss end ignore */
