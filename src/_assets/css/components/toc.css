@@ -1,4 +1,3 @@
-/* purgecss start ignore */
 .toc ol {
   @apply ml-8 text-green-500 list-decimal;
   li {
@@ -11,4 +10,3 @@
     }
   }
 }
-/* purgecss end ignore */
