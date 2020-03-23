@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "date-fns": "^2.6.0",
+    "eleventy-plugin-nesting-toc": "^1.2.0",
     "netlify-lambda": "^1.6.3"
   },
   "devDependencies": {
