@@ -1,6 +1,6 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
-const pluginTOC = require('eleventy-plugin-toc')
+const pluginTOC = require('eleventy-plugin-nesting-toc')
 const markdownIt = require('markdown-it')
 const markdownItAnchor = require('markdown-it-anchor')
 const dateFormat = require('./11ty/filters/date')
@@ -16,7 +16,7 @@ const mdOptions = {
 const mdAnchorOptions = {
   permalink: true,
   permalinkSymbol:
-    '<svg viewBox="0 0 20 21"><path d="M10 1.658L7.73 4.04c1.316-.275 2.994-.068 3.865.364l.494-.518c1.06-1.123 3.15-1.106 4.21 0 1.05 1.105 1.03 3.333 0 4.42l-3.16 3.317c-1.04 1.088-3.16 1.105-4.21 0-.38-.398-.63-.898-.76-1.417l-2.25 2.366c.26.45.56.864.92 1.244 2.1 2.21 6.3 2.228 8.4.017l3.18-3.333c2.1-2.21 2.1-6.632 0-8.842-2.11-2.21-6.32-2.21-8.42 0zM8.405 16.596l-.494.518c-1.06 1.123-3.15 1.106-4.21 0-1.05-1.105-1.03-3.333 0-4.42l3.16-3.317c1.04-1.088 3.16-1.105 4.21 0 .38.398.63.898.76 1.417l2.26-2.366c-.26-.45-.56-.864-.92-1.244-2.1-2.21-6.3-2.228-8.4-.017L1.58 10.5c-2.106 2.21-2.106 6.632 0 8.842 2.104 2.21 6.315 2.21 8.42 0l2.27-2.383c-1.316.27-2.994.06-3.865-.37z"></path></svg>',
+  '<svg viewBox="0 0 20 21"><path d="M10 1.658L7.73 4.04c1.316-.275 2.994-.068 3.865.364l.494-.518c1.06-1.123 3.15-1.106 4.21 0 1.05 1.105 1.03 3.333 0 4.42l-3.16 3.317c-1.04 1.088-3.16 1.105-4.21 0-.38-.398-.63-.898-.76-1.417l-2.25 2.366c.26.45.56.864.92 1.244 2.1 2.21 6.3 2.228 8.4.017l3.18-3.333c2.1-2.21 2.1-6.632 0-8.842-2.11-2.21-6.32-2.21-8.42 0zM8.405 16.596l-.494.518c-1.06 1.123-3.15 1.106-4.21 0-1.05-1.105-1.03-3.333 0-4.42l3.16-3.317c1.04-1.088 3.16-1.105 4.21 0 .38.398.63.898.76 1.417l2.26-2.366c-.26-.45-.56-.864-.92-1.244-2.1-2.21-6.3-2.228-8.4-.017L1.58 10.5c-2.106 2.21-2.106 6.632 0 8.842 2.104 2.21 6.315 2.21 8.42 0l2.27-2.383c-1.316.27-2.994.06-3.865-.37z"></path></svg>',
 }
 
 module.exports = function(eleventyConfig) {
@@ -26,6 +26,7 @@ module.exports = function(eleventyConfig) {
       '_site/javascript/**/*'
     ]
   });
+  eleventyConfig.setLibrary("md", markdownIt(mdOptions).use(markdownItAnchor, mdAnchorOptions));
 
   /*
    * PLUGINS *
@@ -65,10 +66,10 @@ module.exports = function(eleventyConfig) {
     return collection.getFilteredByGlob('./src/writing/**.md')
   })
 
-  eleventyConfig.setLibrary("md", markdownIt(mdOptions).use(markdownItAnchor, mdAnchorOptions));
 
   eleventyConfig.addPassthroughCopy({ "src/_assets/images": "images" });
   eleventyConfig.addPassthroughCopy("src/writing/**/*.(jpg|png)" );
+  eleventyConfig.addPassthroughCopy({"src/_assets/favicomatic/**/*": "/" });
 
   return {
     dir: {
