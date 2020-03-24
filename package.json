@@ -20,7 +20,7 @@
     "build:assets:js": "rollup -c",
     "build:assets:svg": "svg-sprite --svg-xmldecl=false --svg-doctype=false --symbol=true --symbol-inline=true --symbol-dest=src/_includes src/_assets/svg/*.svg",
     "build:11ty": "ELEVENTY_ENV=production npx eleventy",
-    "postinstall": "netlify-lambda install"
+    "postinstall": "netlify-lambda install ./src/_functions"
   },
   "dependencies": {
     "date-fns": "^2.6.0",
