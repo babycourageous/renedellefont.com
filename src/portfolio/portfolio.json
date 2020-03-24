@@ -20,6 +20,13 @@
       "thumbnail": "vinings",
       "link": "/portfolio/vinings",
       "linktext": "View gallery"
+    },
+    {
+      "client": "Mother Restaurant and Bar",
+      "blurb": "Searchable index of karaoke songs using Lunr.js for local restaurant, Mother.",
+      "thumbnail": "mother",
+      "link": "http://motherkaraoke.com/",
+      "linktext": "Visit Site"
     }
   ]
 }
