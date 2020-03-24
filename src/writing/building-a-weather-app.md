@@ -1,7 +1,7 @@
 ---
 title: 'Building A Weather App With Svelte, Tailwind, and Netlify'
 date: 2020-02-20
-featuredimage:
+featuredimage: '/images/writing/weather-week-ahead.png'
 excerpt: In this tutorial, we’ll be building a Weather app in Svelte. The app features a 5-day forecast as well as an interactive city search.
 category: svelte
 type: tutorial
