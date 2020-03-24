@@ -1,6 +1,6 @@
 ---
 title: 'React Tic Tac Toe... in Svelte'
-date: 2019-12-17
+date: 2020-01-16
 featuredimage:
 excerpt: In this tutorial, we’ll be building a Tic Tac Toe game in Svelte. By the end, you’ll have a working Tic Tac Toe game complete with running history and time travel.
 alternative:

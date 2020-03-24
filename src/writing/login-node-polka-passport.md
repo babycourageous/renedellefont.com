@@ -1,6 +1,6 @@
 ---
 title: User Authentication with PassportJS and a Polka server
-date: 2019-11-20
+date: 2020-01-03
 featuredimage: https://camo.githubusercontent.com/662ee2f98b69b0894d0a1d9117a9c5fb4dfc40aa/687474703a2f2f63646e2e61757468302e636f6d2f696d672f70617373706f72742d62616e6e65722d6769746875622e706e67
 excerpt: Passport is authentication middleware for Node.js that can be unobtrusively dropped in to almost any web application.
 alternative:
