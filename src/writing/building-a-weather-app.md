@@ -13,9 +13,10 @@ tags:
 toc: true
 ---
 
-Dark Sky Weather API
-[Algolia Places API](https://community.algolia.com/places/)
-Netlify FUNCTIONS??? for API masking
+In this tutorial, we’ll be building a Weather app in [Svelte](https://svelte.dev/). The app features a 5-day forecast as well as an interactive city search. Our app is going to make an HTTP call to the [DarkSky API](https://darksky.net/) to retrieve data. It will take advantage of the [Algolia Places API](https://community.algolia.com/places/) for autocompleting a city input.
+
+Check out the finished project on github: https://github.com/babycourageous/svelte-netlify-weather-app
+Check out the live app on Netlify: https://svelte-darksky.netlify.com/
 
 ## Initialize A New Svelte Tailwind Project
 
@@ -128,7 +129,7 @@ All this does is remove the `name` prop from being passed into the App. Then cop
 </main>
 ```
 
-> SCREENSHOT
+{% figure 'weather-initial.png', 'The Svelte Weather App Initial Layout', 'Our weather app layout skeleton.' %}
 
 ## Sign up for a Darksky account
 
@@ -227,9 +228,9 @@ Inside the `App.svelte` file import the `onMount` hook, create a function called
 </script>
 ```
 
-> SCREENSHOT
+{% figure 'weather-cors.png', 'The dreaded CORS error', 'Uh oh.... CORS!' %}
 
-If yo uopen up the console you should see the dreaded CORS error. Since our API key is secret and we don't want other domains using it, DarkSky has CORS enabled and we must call the function from a server. But spinning up a server or hosting this just to make an API call is more trouble than it's worth. That's where Netlify comes in!
+If you open up the console you should see the dreaded CORS error. Since our API key is secret and we don't want other domains using it, DarkSky has CORS enabled and we must call the function from a server. But spinning up a server or hosting this just to make an API call is more trouble than it's worth. That's where Netlify comes in!
 
 ## Proxy that API with Netlify
 
@@ -302,7 +303,7 @@ async function fetchData() {
 
 SUCCESS! If all went well you should see the API data returned in the console.
 
-> SCREENSHOT
+{% figure 'weather-log.png', 'Weather data logged in the console', 'Success... We have weather data!' %}
 
 ## Expand on the serverless API
 
@@ -312,7 +313,7 @@ Now we're gonna make the API a little more dynamic.
 
 Go to the Netlify admin and within the settings scroll to the **Environment** section.
 
-> SCREENSHOT
+{% figure 'weather-env.png', 'Netlify admin dashboard', 'Updating the environment variables in the Netlify Admin Dashboard.' %}
 
 Add a new variable called **DARKSKY_API_KEY** and put your key as the value. This will now be available on `process.env` within our lambda.
 
@@ -372,7 +373,7 @@ Let's be honest, `./netlify/functions/weather` is an ugly endpoint for an API. I
 
 `netlify.toml`
 
-```toml
+```yaml
 [[redirects]]
   from = "/api/weather/*"
   to = "/.netlify/functions/dark-sky/:splat"
@@ -465,7 +466,7 @@ Now use these variables in our markup:
 
 Now you should see the initial state data displayed in the app.
 
-> SCREENSHOT
+{% figure 'weather-with-initial-state.png', 'Initial state data in app', 'Our weather app displays dynamic data!' %}
 
 ## Adding Animated Icons
 
@@ -557,7 +558,7 @@ Then update the `fetchData` function to add and animate a weather icon. Let's ju
 
 That should render an animated partly cloudy icon in the `canvas` element.
 
-> SCREENSHOT
+{% figure 'weather-with-initial-icon.png', 'Weather app with icon', 'Adding an animated icon from Skycons.' %}
 
 ### Using dynamic icon data
 
@@ -724,7 +725,7 @@ This will be helpful since we need to reference the DOM elements for the daily f
 
 Once the state is updated a `forEach` loop is used to create the five Skycons for the daily forecast.
 
-> SCREENSHOT
+{% figure 'weather-week-ahead.png', 'The week ahead', 'Using dynamic data to populate a 5-day forecast.' %}
 
 ## Integrate Algolia Places API
 
