@@ -1,11 +1,11 @@
-pre:not([class*='language-']) {
+pre {
   @apply p-2 mb-4 bg-gray-800 text-base text-blue-600 border border-gray-400 rounded;
   & code {
     @apply text-blue-600 whitespace-pre-wrap;
   }
 }
 code {
-  @apply inline-block px-1 bg-gray-800 text-sm text-orange-600;
+  @apply inline-block px-1 text-sm text-orange-600;
 }
 
 pre code {
@@ -52,7 +52,7 @@ code[class*='language-'] ::selection {
 }
 /* Code blocks */
 pre[class*='language-'] {
-  @apply my-2 mx-0 p-4 overflow-auto;
+  @apply my-2 mx-0 overflow-auto;
 }
 
 :not(pre) > code[class*='language-'],
@@ -66,6 +66,10 @@ pre[class*='language-'] {
   padding: 0.1em;
 }
 
+/* TOML FIX FOR NEWLINES WITH BRACKET */
+.token.table {
+  display: inline;
+}
 .token.comment,
 .token.prolog,
 .token.doctype,
