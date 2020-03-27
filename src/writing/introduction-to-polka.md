@@ -1,7 +1,7 @@
 ---
 title: Introduction to Polka (an alternative to Express.js)
 date: 2019-12-17
-featuredimage: https://raw.githubusercontent.com/lukeed/polka/master/polka.png
+featuredimage: /images/writing/polka-screenshot.png
 excerpt: Polka is an alternative to Express.js that is more minimal and performant. It's simply a native HTTP server with added support for routing, middleware, and sub-applications. That's it!
 alternative:
   - express
