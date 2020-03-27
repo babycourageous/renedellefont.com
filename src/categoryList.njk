@@ -1,0 +1,16 @@
+---
+layout: base
+permalink: /categories/
+---
+<div class="max-w-xl mx-auto">
+  <h1 class="text-5xl text-green-600 leading-none">Stuff I've Written About</h1>
+  <ul class="mt-4">
+
+    {% for category in collections.categoryList %}
+
+      {% set categoryUrl %}/categories/{{ category }}/{% endset %}
+      <li>
+        <a href="{{ categoryUrl | url }}" class="underline">{{ category }}</a> ({{ collections[category].length }})</li>
+    {% endfor %}
+  </ul>
+</div>
