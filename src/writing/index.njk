@@ -5,6 +5,6 @@ layout: base
 {% set postlist = collections.posts | reverse %}
 <ul class="o-10">
   {%- for post in postlist -%}
-    <li>{%- include "post-preview.njk" -%}</li>
+    <li>{%- include "post-preview-dark.njk" -%}</li>
   {%- endfor -%}
 </ul>
