@@ -1,0 +1,67 @@
+---
+layout: base
+---
+<h1 class="text-3xl">Contact Me!</h1>
+<p>Just use the form below to send me information about your project. I'll give you a call to talk over all your needs so I can quote a fair price.</p>
+<form class="mt-4 o-4" action="/.netlify/functions/contact">
+  <fieldset>
+    <legend>Name<span class="required" aria-hidden="true">*</span></legend>
+
+    <div class="flex flex-wrap -mx-3 w-full">
+      <label class="w-full sm:w-1/2 px-3 text-gray-400 text-sm" for="fname"><input class="form-input block w-full text-gray-800" id="fname" name="fname" type="text" maxlength="30" data-title="First" aria-required="true">First Name</label>
+      <label class="w-full sm:w-1/2 px-3 text-gray-400 text-sm" for="lname"><input class="form-input block w-full text-gray-800" id="lname" name="lname" type="text" data-title="Last" aria-required="true">Last Name</label>
+    </div>
+  </fieldset>
+
+  <div class="flex flex-wrap -mx-3 w-full">
+    <div class="w-full px-3 text-gray-400 text-sm">
+      <label for="email">Email Address<span aria-hidden="true">*</span></label>
+      <input class="form-input block w-full text-gray-800" id="email" name="email" type="email" autocomplete="email" aria-required="true">
+    </div>
+  </div>
+
+  <div class="flex flex-wrap -mx-3 w-full">
+    <div class="w-full px-3 text-gray-400 text-sm">
+      <label for="subject">Subject<span class="required" aria-hidden="true">*</span></label>
+      <input class="form-input block w-full text-gray-800" id="subject" name="subject" type="text" aria-required="true">
+    </div>
+  </div>
+
+  <div class="flex flex-wrap -mx-3 w-full">
+    <div class="w-full px-3 text-gray-400 text-sm">
+      <label for="website">Current Website (if applicable)</label>
+      <input class="form-input block w-full text-gray-800" id="website" name="website" type="text">
+    </div>
+  </div>
+
+  <div>
+    <label for="message">Message<span class="required" aria-hidden="true">*</span></label>
+    <div class="description">Please include any additional information about the project that you'd like me to know.</div>
+    <textarea class="form-textarea block w-full text-gray-800" id="message" name="message" aria-required="true" rows="6"></textarea>
+  </div>
+
+  <fieldset>
+    <legend>Phone <span class="text-xs">(Just so I can follow up with you.)</span></legend>
+
+    <div class="flex oh-2">
+      <label class="w-16">
+        <input class="form-input block w-full text-gray-800" x-autocompletetype="phone-area-code" type="text" maxlength="3" data-title="Areacode">
+        ###
+      </label>
+
+      <label class="w-16">
+        <input class="form-input block w-full text-gray-800" x-autocompletetype="phone-local-prefix" type="text" maxlength="3" data-title="Prefix">
+        ###
+      </label>
+
+      <label class="w-16">
+        <input class="form-input block w-full text-gray-800" x-autocompletetype="phone-local-suffix" type="text" maxlength="4" data-title="Line">
+        ####
+      </label>
+    </div>
+  </fieldset>
+
+  <div data-animation-role="button">
+    <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" type="submit">Submit</button>
+  </div>
+</form>
