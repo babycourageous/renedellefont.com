@@ -7,7 +7,6 @@
   "author": "Rene Dellefont <renedellefont@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "yarn run dev",
     "dev": "NODE_ENV=development npm-run-all --serial build:assets --parallel serve watch:*",
     "watch": "npm-run-all --parallel watch:*",
     "watch:css": "chokidar 'src/_assets/css/**/*' 'tailwind.config.js' --command 'run-s build:assets:css'",
