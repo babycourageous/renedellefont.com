@@ -13,13 +13,13 @@
     "watch:js": "rollup -c -w",
     "watch:svg": "chokidar 'src/_assets/svg/**/*' --command 'run-s build:assets:svg'",
     "serve": "ELEVENTY_ENV=development npx @11ty/eleventy --serve",
+    "prebuild": "netlify-lambda install ./src/_functions",
     "build": "NODE_ENV=production npm-run-all --sequential build:assets build:11ty",
     "build:assets": "npm-run-all --parallel build:assets:*",
     "build:assets:css": "postcss src/_assets/css/index.css -o _site/css/styles.css",
     "build:assets:js": "rollup -c",
     "build:assets:svg": "svg-sprite --svg-xmldecl=false --svg-doctype=false --symbol=true --symbol-inline=true --symbol-dest=src/_includes src/_assets/svg/*.svg",
-    "build:11ty": "ELEVENTY_ENV=production npx eleventy",
-    "postinstall": "netlify-lambda install ./src/_functions"
+    "build:11ty": "ELEVENTY_ENV=production npx eleventy"
   },
   "dependencies": {
     "date-fns": "^2.6.0",
