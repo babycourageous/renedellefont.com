@@ -74,7 +74,7 @@ pre[class*='language-'] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  @apply text-gray-700;
+  @apply text-gray-500;
   /*color: #5c6370;*/
 }
 
