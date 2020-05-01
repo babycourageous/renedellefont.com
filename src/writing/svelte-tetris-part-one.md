@@ -90,7 +90,7 @@ export default app
 </style>
 ```
 
-{% figure 'svelte-tetris-hello-tetris.png', 'The default install with updated text.', 'Not much different, yet.' %}
+{% figure 'svelte-tetris-hello.png', 'The default install with updated text.', 'Not much different, yet.' %}
 
 ### Javascript Helper Utilities
 
