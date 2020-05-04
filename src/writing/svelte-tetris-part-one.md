@@ -10,11 +10,14 @@ tags:
 toc: true
 ---
 
-[github](https://github.com/babycourageous/svelte-tetris/tree/01-Basic-Setup)
-
-[preview](https://01-basic-setup--svelte-tetris.netlify.app/)
-
 ## Overview
+
+**Part 1 -** The Basic Set Up ([github](https://github.com/babycourageous/svelte-tetris/tree/01-Basic-Setup) | [preview](https://01-basic-setup--svelte-tetris.netlify.app/))
+**Part 2 -** [The Board and Pieces](/writing/svelte-tetris-part-two)
+**Part 3 -** [Player Movement and Collision Detection](/writing/svelte-tetris-part-three)
+**Part 4 -** [SRS Guidelines: Spawn Orientation, Basic Rotation, and Wall Kicks](/writing/svelte-tetris-part-four)
+**Part 5 -** [Automatic Falling and Clearing Lines](/writing/svelte-tetris-part-five)
+**Part 6 -** Part Six - Some Bells and Whistles
 
 Ah, the classic game of Tetris. In this tutorial, we are going to do our best to recreate this game using Svelte. When we are through we will have a fully functioning game with points and levels. We'll use Svelte components to display all our graphics and Svelte stores to handle all our data.
 
@@ -470,3 +473,10 @@ Finally import and add our `Tetris` container to our `App` file and update our s
 ## Wrapping Up
 
 We have a basic wirframe sketched out of an old school tetris game! In the next installment of this series we will introduce the two basic building blocks of Tetris - the board and the pieces.
+
+Part One - The Basic Setup ([github](https://github.com/babycourageous/svelte-tetris/tree/01-Basic-Setup) | [preview](https://01-basic-setup--svelte-tetris.netlify.app/))
+[Part Two - The Board and Pieces](/writing/svelte-tetris-part-two)
+[Part Three - Player Movement and Collision Detection](/writing/svelte-tetris-part-three)
+[Part Four - SRS Guidelines: Spawn Orientation, Basic Rotation, and Wall Kicks](/writing/svelte-tetris-part-four)
+[Part Five - Automatic Falling and Clearing Lines](/writing/svelte-tetris-part-five)
+Part Six - Some Bells and Whistles
