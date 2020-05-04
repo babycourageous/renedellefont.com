@@ -2,7 +2,7 @@
 title: 'Making Tetris with Svelte: part one - The Basic Set Up'
 date: 2020-04-10
 featuredimage: '/images/writing/svelte-tetris-featured.png'
-excerpt: 'Learn to create a Tetris game from scratch with Svetle.'
+excerpt: 'Learn to create a Tetris game from scratch with Svelte.'
 category: svelte
 type: tutorial
 tags:
