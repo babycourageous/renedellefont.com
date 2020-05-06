@@ -2,7 +2,7 @@
 title: 'Making Tetris with Svelte: part one - The Basic Set Up'
 date: 2020-04-10
 featuredimage: '/images/writing/svelte-tetris-featured.png'
-excerpt: 'Learn to create a Tetris game from scratch with Svelte.'
+excerpt: 'In this first installment we are just getting our Svelte app up and running for a Tetris clone.'
 category: svelte
 type: tutorial
 tags:

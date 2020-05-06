@@ -2,7 +2,7 @@
 title: 'Making Tetris with Svelte: part two - The Board and Pieces'
 date: 2020-04-14
 featuredimage: '/images/writing/svelte-tetris-featured.png'
-excerpt: 'Learn to create a Tetris game from scratch with Svetle.'
+excerpt: 'In the second installment we get our board and a piece rendered using the HTML canvas element.'
 category: svelte
 type: tutorial
 tags:

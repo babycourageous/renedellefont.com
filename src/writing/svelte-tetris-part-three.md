@@ -2,7 +2,7 @@
 title: 'Making Tetris with Svelte: part three - Player Movement and Collision Detection'
 date: 2020-04-17
 featuredimage: '/images/writing/svelte-tetris-featured.png'
-excerpt: 'Learn to create a Tetris game from scratch with Svetle.'
+excerpt: 'This third part of the Tetris tutorial is all about controlling the piece on the board with the keyboard.'
 category: svelte
 type: tutorial
 tags:
