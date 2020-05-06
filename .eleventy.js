@@ -89,8 +89,9 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addCollection('categoryList', collection => {
     let categorySet = new Set()
-    const writing = collection.getFilteredByGlob('./src/writing/**.md')
 
+    const writing = collection.getFilteredByGlob('./src/writing/**.md')
+    
     writing.forEach(post => {
       if ('category' in post.data) {
         let categories = post.data.category
@@ -117,8 +118,7 @@ module.exports = function(eleventyConfig) {
       }
     })
 
-    console.log(categorySet)
-    return [...categorySet].filter(p => !p.data.draft).sort()
+    return [...categorySet].sort()
 
     /*
     posts.forEach(post => {
