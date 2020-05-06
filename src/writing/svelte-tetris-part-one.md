@@ -17,7 +17,7 @@ toc: true
 **Part 3 -** [Player Movement and Collision Detection](/writing/svelte-tetris-part-three)
 **Part 4 -** [SRS Guidelines: Spawn Orientation, Basic Rotation, and Wall Kicks](/writing/svelte-tetris-part-four)
 **Part 5 -** [Automatic Falling and Clearing Lines](/writing/svelte-tetris-part-five)
-**Part 6 -** Part Six - Some Bells and Whistles
+**Part 6 -** Next Piece, Levels, Lines, Score, and Statistics (Coming Soon)
 
 Ah, the classic game of Tetris. In this tutorial, we are going to do our best to recreate this game using Svelte. When we are through we will have a fully functioning game with points and levels. We'll use Svelte components to display all our graphics and Svelte stores to handle all our data.
 
@@ -479,4 +479,4 @@ Part One - The Basic Setup ([github](https://github.com/babycourageous/svelte-te
 [Part Three - Player Movement and Collision Detection](/writing/svelte-tetris-part-three)
 [Part Four - SRS Guidelines: Spawn Orientation, Basic Rotation, and Wall Kicks](/writing/svelte-tetris-part-four)
 [Part Five - Automatic Falling and Clearing Lines](/writing/svelte-tetris-part-five)
-Part Six - Some Bells and Whistles
+Part 6 - Next Piece, Levels, Lines, Score, and Statistics (Coming Soon)
