@@ -2,7 +2,7 @@
 title: 'Making Tetris with Svelte: part five - Automatic Falling and Clearing Lines'
 date: 2020-04-25
 featuredimage: '/images/writing/svelte-tetris-featured.png'
-excerpt: 'It's part five... time to get that automatic downward movement of our pieces in motion as well as clearing completed lines.'
+excerpt: "It's part five... time to get that automatic downward movement of our pieces in motion as well as clearing completed lines."
 category: svelte
 type: tutorial
 tags:
