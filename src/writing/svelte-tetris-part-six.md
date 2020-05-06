@@ -844,7 +844,7 @@ Well, that's not 100% accurate. They have been drawn but we just can't see them 
 </script>
 ```
 
-{% 'svelte-tetris-stats-giant-pieces.png', 'Our statistics pieces are too big.', 'Our statsitcs pieces are drawn... but way too big.' %}
+{% figure 'svelte-tetris-stats-giant-pieces.png', 'Our statistics pieces are too big.', 'Our statsitcs pieces are drawn... but way too big.' %}
 
 OK. The size of the rendered pieces is something else we need to leave to props. That way our statistic pieces can be scaled down to fit.
 
@@ -892,7 +892,7 @@ Here we simply adjust the canvas scale when we mount the component. It defaults 
 
 And voila!
 
-{% 'svelte-tetris-statistics-scaled.png', 'The Statistics window in all its glory.', 'The statistics window in all its glory' %}
+{% figure 'svelte-tetris-statistics-scaled.png', 'The Statistics window in all its glory.', 'The statistics window in all its glory' %}
 
 ## Final Tweaks
 
