@@ -118,7 +118,7 @@ module.exports = function(eleventyConfig) {
     })
 
     console.log(categorySet)
-    return [...categorySet].sort()
+    return [...categorySet].filter(p => !p.data.draft).sort()
 
     /*
     posts.forEach(post => {
