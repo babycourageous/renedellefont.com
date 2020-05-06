@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="{{ '/css/styles.css' | url }}">
   </head>
   <body class="flex flex-col h-screen font-serif bg-gray-900">
-    <div class="p-0 bg-gray-900 font-sans text-white sm:p-6">
+    <div class="p-0 bg-gray-900 font-sans text-white">
       {%- include "header.njk" -%}
       <main class="flex-holy w-5/6 max-w-2xl mx-auto pb-16{% if templateClass %} {{ templateClass }}{% endif %}">
         {{ content | safe }}
