@@ -358,6 +358,7 @@ We have `tailwind` creating a css file and `sirv` serving it up from our static 
   </body>
 </html>
 ```
+
 {% endraw %}
 
 We threw in some Tailwind classes for good measure. When you visit any of the routes now, the content shoul be centered in the viewport (`mx-auto`) with a `max-width` that adjusts to default browser width breakpoints Tailwind provides.
